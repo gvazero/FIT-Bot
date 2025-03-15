@@ -1,0 +1,27 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id       String  @id @default(uuid())
+  telegramId String @unique
+  theme    String  @default("light")
+  language String  @default("en")
+  savedChats Int[] @default([])
+  @@index([telegramId])
+}
+
+model Chat {
+  id         Int    @id @default(autoincrement())
+  short_name String
+  long_name  String
+  semester   Int
+  role       String
+  link       String
+  @@index([short_name, semester])
+}

@@ -1,0 +1,26 @@
+{
+  "action": {
+    "guide": "FIT Guide",
+    "general": "Obecné",
+    "offtopic": "Shitpost",
+    "stickers": "Sticker Pack"
+  },
+  "saved": {
+    "title": "Uložené chaty",
+    "empty": "Žádné uložené chaty."
+  },
+  "settings": {
+    "title": "Nastavení",
+    "language": "Jazyk",
+    "theme": "Motiv",
+    "dark": "Tmavý",
+    "light": "Světlý",
+    "close": "Zavřít"
+  },
+  "search": {
+    "placeholder": "Hledat chaty...",
+    "link": "Odkaz na chat",
+    "semester": "Semestr",
+    "role": "Role"
+  }
+}

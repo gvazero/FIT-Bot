@@ -1,0 +1,26 @@
+{
+  "action": {
+    "guide": "FIT Гайд",
+    "general": "Загальне",
+    "offtopic": "Shitpost",
+    "stickers": "Наліпки"
+  },
+  "saved": {
+    "title": "Збережені чати",
+    "empty": "Немає збережених чатів."
+  },
+  "settings": {
+    "title": "Налаштування",
+    "language": "Мова",
+    "theme": "Тема",
+    "dark": "Темна",
+    "light": "Світла",
+    "close": "Закрити"
+  },
+  "search": {
+    "placeholder": "Пошук чатів...",
+    "link": "Посилання на чат",
+    "semester": "Семестр",
+    "role": "Роль"
+  }
+}

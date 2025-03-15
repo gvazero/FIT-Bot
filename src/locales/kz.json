@@ -1,0 +1,26 @@
+{
+  "action": {
+    "guide": "FIT Guide",
+    "general": "Жалпы",
+    "offtopic": "Shitpost",
+    "stickers": "Стикерлер жинағы"
+  },
+  "saved": {
+    "title": "Сақталған чаттар",
+    "empty": "Сақталған чаттар жоқ."
+  },
+  "settings": {
+    "title": "Параметрлер",
+    "language": "Тіл",
+    "theme": "Тема",
+    "dark": "Түнгі",
+    "light": "Жарық",
+    "close": "Жабу"
+  },
+  "search": {
+    "placeholder": "Чаттарды іздеу...",
+    "link": "Чатқа сілтеме",
+    "semester": "Семестр",
+    "role": "Рөл"
+  }
+}

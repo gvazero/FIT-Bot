@@ -1,0 +1,26 @@
+{
+  "action": {
+    "guide": "FIT Guide",
+    "general": "General",
+    "offtopic": "Shitpost",
+    "stickers": "Sticker Pack"
+  },
+  "saved": {
+    "title": "Saved Chats",
+    "empty": "No saved chats."
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "theme": "Theme",
+    "dark": "Dark",
+    "light": "Light",
+    "close": "Close"
+  },
+  "search": {
+    "placeholder": "Search chats...",
+    "link": "Link to the chat",
+    "semester": "Semester",
+    "role": "Role"
+  }
+}
