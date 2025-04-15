@@ -1,27 +1,33 @@
+// This file defines the database schema for the FIT-bot application using Prisma ORM
+
+// Configuration for the Prisma Client generator
 generator client {
   provider = "prisma-client-js"
 }
 
+// Database connection configuration
 datasource db {
-  provider = "postgresql"
-  url      = env("DATABASE_URL")
+  provider = "postgresql"  // Using PostgreSQL as the database provider
+  url      = env("DATABASE_URL")  // Database URL is stored in environment variables
 }
 
+// User model representing Telegram users of the application
 model User {
-  id       String  @id @default(uuid())
-  telegramId String @unique
-  theme    String  @default("light")
-  language String  @default("en")
-  savedChats Int[] @default([])
-  @@index([telegramId])
+  id         String  @id @default(uuid())  // Unique identifier for each user
+  telegramId String  @unique  // Telegram user ID, must be unique
+  theme      String  @default("light")  // User's theme preference, defaults to light
+  language   String  @default("en")  // User's language preference, defaults to English
+  savedChats Int[]   @default([])  // Array of saved chat IDs
+  @@index([telegramId])  // Index on telegramId for faster queries
 }
 
+// Chat model representing available chat groups/channels
 model Chat {
-  id         Int    @id @default(autoincrement())
-  short_name String
-  long_name  String
-  semester   Int
-  role       String
-  link       String
-  @@index([short_name, semester])
+  id         Int    @id @default(autoincrement())  // Unique identifier for each chat
+  short_name String  // Short name/code for the chat
+  long_name  String  // Full name of the chat
+  semester   Int     // Semester number the chat is associated with
+  role       String  // Role/type of the chat (e.g., student, teacher)
+  link       String  // URL link to the chat
+  @@index([short_name, semester])  // Compound index for faster queries by short_name and semester
 }

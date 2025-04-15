@@ -1,3 +1,9 @@
+/**
+ * Main page component
+ * 
+ * This is the home page of the application
+ */
+
 "use client"
 
 import { useState } from "react"
@@ -14,12 +20,28 @@ import { Chat } from "@/lib/types";
 import { useTranslation } from "react-i18next";
 import { useUserData } from "@/hooks/useUserData";
 
-
+/**
+ * Home page component
+ * 
+ * @returns {JSX.Element} The rendered home page
+ */
 export default function Home() {
+  // State for settings modal visibility
   const [isSettingsOpen, setIsSettingsOpen] = useState(false)
+  // State for the currently selected chat
   const [selectedChat, setSelectedChat] = useState<Chat|null>(null)
+  // Translation function from i18next
   const { t } = useTranslation();
 
+  /**
+   * Get user data from the custom hook
+   * - chats: All available chats
+   * - savedChats: Chats saved by the user
+   * - savedChatsIds: IDs of chats saved by the user
+   * - telegramId: User's Telegram ID
+   * - language: User's preferred language
+   * - toggleLikedStatus: Function to toggle saved status of a chat
+   */
   const {
     chats,
     savedChats,
@@ -29,6 +51,9 @@ export default function Home() {
     toggleLikedStatus
   } = useUserData();
 
+  /**
+   * Render the home page UI
+   */
   return (
     <>
       <Head>
